@@ -645,21 +645,21 @@ nav ul ul li.has-childs:before {
 }
 
 /* Terms banner new added code start */
+/* 
 .banner-slide2 {
   background-image: url(../images/terms.jpg);
-  height: 100vh; /* Full viewport height */
-  /* border: 2px solid red; */
+  height: 400px; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0; /* Removed extra padding */
+  padding: 0; 
   position: relative;
   width: 100%;
   display: flex;
-  align-items: center; /* Content center align */
+  align-items: center; 
   justify-content: center;
   text-align: center;
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -679,21 +679,21 @@ nav ul ul li.has-childs:before {
 /* Privacy policy new code start */
 
 /* Terms banner new added code start */
+/* 
 .banner-slide3 {
   background-image: url(../images/standard-quality-control-collage-concept.jpg);
-  height: 100vh; /* Full viewport height */
-  /* border: 2px solid red; */
+  height: 400px; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0; /* Removed extra padding */
+  padding: 0; 
   position: relative;
   width: 100%;
   display: flex;
-  align-items: center; /* Content center align */
+  align-items: center; 
   justify-content: center;
   text-align: center;
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

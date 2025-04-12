@@ -32,11 +32,53 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+
+  <style>
+    .gallery-optz li a {
+      color: #fff;
+      background: #000;
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+    .gallery-col h3 {
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #000;
+      text-align: left;
+    }
+    .gallery-col h3 a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+    .features-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #444;
+    }
+    .features-list li i {
+      margin-right: 8px;
+      color: #5d56f1;
+      font-size: 15px;
+    }
+  </style>
 
   <body>
     <div class="wrapper">
-      <!-- header start -->
       <header>
         <div class="top-header">
           <div class="container">
@@ -147,13 +189,11 @@
         </div>
         <!--bottom-header end-->
       </header>
-      <!--header end-->
 
-      <!--mobile-menu start new -->
       <div class="mobile-menu">
         <ul>
           <li>
-            <a class="active" href="#" title="">Home</a>
+            <a class="active" href="index.html" title="">Home</a>
             <!-- <ul>
               <li>
                 <a class="active" href="index-2.html" title="">01 Homepage</a>
@@ -198,10 +238,10 @@
       <section class="pager-sec overlay-dark">
         <div class="container">
           <div class="pager-sec-details">
-            <h2>Gallery</h2>
+            <h2>Products</h2>
             <ul class="breadcrumb">
               <li><a href="#" title="">Home</a></li>
-              <li><span>Gallery</span></li>
+              <li><span>Products</span></li>
             </ul>
           </div>
           <!--pager-sec-details end-->
@@ -212,265 +252,410 @@
       <section class="page-content">
         <div class="container">
           <div class="gallery-page">
-            <div class="options">
-              <div class="option-isotop">
-                <ul
-                  id="filter"
-                  class="option-set filters-nav"
-                  data-option-key="filter"
-                >
-                  <li><a class="selected" data-option-value="*">All</a></li>
-                  <li><a data-option-value=".alarm">Alarm & Lock</a></li>
-                  <li><a data-option-value=".circuit">Closed Circuit</a></li>
-                  <li><a data-option-value=".cams">Day & Night Cams</a></li>
-                  <li><a data-option-value=".equipments">Equipments</a></li>
-                  <li><a data-option-value=".wireless">Wireless Cams</a></li>
-                </ul>
-              </div>
+            <div class="options" style="font-weight: bold; font-size: 28px">
+              Products
             </div>
-            <!--options end-->
+            <!-- Font Awesome CDN -->
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            />
+
             <div class="gallery-sec">
               <div class="row">
                 <div class="masonary" id="custom-gallery">
+                  <!-- 1. Smart Touch Panel -->
                   <div class="col-lg-4 col-md-6 col-sm-6 col-12 alarm">
-                    <div class="gallery-col">
-                      <div class="gallery-img">
+                    <div class="gallery-col" style="padding: 10px">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery1.jpg"
                           alt=""
+                          style="width: 100%; display: block"
                         />
-                        <ul class="gallery-optz">
-                          <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
-                          </li>
-                          <li>
-                            <a
-                              href="assets/images/resources/gallery1.jpg"
-                              title=""
-                              class="lightbox"
-                              ><i class="fa fa-search"></i
-                            ></a>
-                          </li>
-                        </ul>
+                        <ul
+                          class="gallery-optz"
+                          style="
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            gap: 10px;
+                          "
+                        ></ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3><a href="#" title="">Touch Screen Automation</a></h3>
+                      <h3><a href="#">Smart Touch Panel</a></h3>
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+
+                      <ul class="features-list">
+                        <li>
+                          <i class="fa fa-mobile-alt"></i> Touchscreen Interface
+                        </li>
+                        <li><i class="fa fa-bell"></i> Alarm Integration</li>
+                        <li><i class="fa fa-wifi"></i> Mobile Control</li>
+                        <li>
+                          <i class="fa fa-sync-alt"></i> Multi-Device Sync
+                        </li>
+                      </ul>
                     </div>
                   </div>
+
+                  <!-- 2. OfficeGuard Pro CCTV -->
                   <div class="col-lg-4 col-md-6 col-sm-6 col-12 circuit">
-                    <div class="gallery-col">
-                      <div class="gallery-img">
+                    <div class="gallery-col" style="padding: 10px">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery2.jpg"
                           alt=""
                         />
-                        <ul class="gallery-optz">
-                          <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
-                          </li>
-                          <li>
-                            <a
-                              href="assets/images/resources/gallery2.jpg"
-                              title=""
-                              class="lightbox"
-                              ><i class="fa fa-search"></i
-                            ></a>
-                          </li>
-                        </ul>
+                        <ul class="gallery-optz"></ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3>
-                        <a href="#" title="">Office Surveillance System</a>
-                      </h3>
+                      <h3><a href="#">OfficeGuard Pro CCTV</a></h3>
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+                      <ul class="features-list">
+                        <li><i class="fa fa-video"></i> 1080p HD Resolution</li>
+                        <li><i class="fa fa-sync"></i> 360° Coverage</li>
+                        <li><i class="fa fa-cloud"></i> Cloud Storage</li>
+                        <li><i class="fa fa-moon"></i> Night Vision</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12 cams">
+
+                  <!-- 3. RealNet Outdoor Eye -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="gallery-col">
-                      <div class="gallery-img">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery3.jpg"
                           alt=""
                         />
                         <ul class="gallery-optz">
                           <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                            <a href="#"><i class="fa fa-link"></i></a>
                           </li>
                           <li>
                             <a
                               href="assets/images/resources/gallery3.jpg"
-                              title=""
                               class="lightbox"
                               ><i class="fa fa-search"></i
                             ></a>
                           </li>
                         </ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3>
-                        <a href="#" title="">Out Door Surveillance System</a>
-                      </h3>
+                      <h3><a href="#">RealNet Outdoor Eye</a></h3>
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+                      <ul class="features-list">
+                        <li>
+                          <i class="fa fa-cloud-sun"></i> Weatherproof Body
+                        </li>
+                        <li><i class="fa fa-shield-alt"></i> IP67 Rating</li>
+                        <li><i class="fa fa-bolt"></i> Motion Alerts</li>
+                        <li>
+                          <i class="fa fa-map-marker-alt"></i> Geo-Tracking
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12 wireless">
+
+                  <!-- 4. Control Hub 360 -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="gallery-col">
-                      <div class="gallery-img">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery4.jpg"
                           alt=""
                         />
                         <ul class="gallery-optz">
                           <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                            <a href="#"><i class="fa fa-link"></i></a>
                           </li>
                           <li>
                             <a
                               href="assets/images/resources/gallery4.jpg"
-                              title=""
                               class="lightbox"
                               ><i class="fa fa-search"></i
                             ></a>
                           </li>
                         </ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3><a href="#" title="">CCTV Surveillance Room</a></h3>
+                      <h3><a href="#">Control Hub 360</a></h3>
+                      <ul class="features-list">
+                        <p
+                          style="
+                            margin: 5px 0;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-align: left;
+                            color: #000;
+                          "
+                        >
+                          Features:
+                        </p>
+                        <li>
+                          <i class="fa fa-desktop"></i> Central Management
+                        </li>
+                        <li><i class="fa fa-server"></i> Local Storage</li>
+                        <li><i class="fa fa-plug"></i> Power Backup</li>
+                        <li><i class="fa fa-tools"></i> Easy Integration</li>
+                      </ul>
                     </div>
                   </div>
-                  <div
-                    class="col-lg-4 col-md-6 col-sm-6 col-12 equipments wireless"
-                  >
+
+                  <!-- 5. RealNet SecureLock -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="gallery-col">
-                      <div class="gallery-img">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery5.jpg"
                           alt=""
                         />
                         <ul class="gallery-optz">
                           <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                            <a href="#"><i class="fa fa-link"></i></a>
                           </li>
                           <li>
                             <a
                               href="assets/images/resources/gallery5.jpg"
-                              title=""
                               class="lightbox"
                               ><i class="fa fa-search"></i
                             ></a>
                           </li>
                         </ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3><a href="#" title="">Fingerprint Door Lock</a></h3>
+                      <h3><a href="#">RealNet SecureLock</a></h3>
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+                      <ul class="features-list">
+                        <li><i class="fa fa-lock"></i> Smart Door Lock</li>
+                        <li><i class="fa fa-key"></i> Keyless Entry</li>
+                        <li>
+                          <i class="fa fa-fingerprint"></i> Biometric Access
+                        </li>
+                        <li><i class="fa fa-mobile"></i> App Unlock</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12 circuit">
+
+                  <!-- 6. SmartTab Access App -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="gallery-col">
-                      <div class="gallery-img">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery6.jpg"
                           alt=""
                         />
                         <ul class="gallery-optz">
                           <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                            <a href="#"><i class="fa fa-link"></i></a>
                           </li>
                           <li>
                             <a
                               href="assets/images/resources/gallery6.jpg"
-                              title=""
                               class="lightbox"
                               ><i class="fa fa-search"></i
                             ></a>
                           </li>
                         </ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3><a href="#" title="">Smarttab Home App</a></h3>
+                      <h3><a href="#">SmartTab Access App</a></h3>
+
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+                      <ul class="features-list">
+                        <li><i class="fa fa-download"></i> Android/iOS</li>
+                        <li><i class="fa fa-bell"></i> Push Notifications</li>
+                        <li><i class="fa fa-camera"></i> Live Streaming</li>
+                        <li><i class="fa fa-lock"></i> Remote Lock/Unlock</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12 alarm circuit">
+
+                  <!-- 7. 360° Dome Surveillance -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="gallery-col">
-                      <div class="gallery-img">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery7.jpg"
                           alt=""
                         />
                         <ul class="gallery-optz">
                           <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                            <a href="#"><i class="fa fa-link"></i></a>
                           </li>
                           <li>
                             <a
                               href="assets/images/resources/gallery7.jpg"
-                              title=""
                               class="lightbox"
                               ><i class="fa fa-search"></i
                             ></a>
                           </li>
                         </ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3><a href="#" title="">CCTV Surveillance</a></h3>
+                      <h3><a href="#">360° Dome Surveillance</a></h3>
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+                      <ul class="features-list">
+                        <li><i class="fa fa-video"></i> Fisheye Lens</li>
+                        <li><i class="fa fa-retweet"></i> Auto Rotate</li>
+                        <li><i class="fa fa-brain"></i> AI Detection</li>
+                        <li><i class="fa fa-cog"></i> Noise Filter</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12 equipments">
+
+                  <!-- 8. WiFi Bullet Camera -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="gallery-col">
-                      <div class="gallery-img">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery8.jpg"
                           alt=""
                         />
                         <ul class="gallery-optz">
                           <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                            <a href="#"><i class="fa fa-link"></i></a>
                           </li>
                           <li>
                             <a
                               href="assets/images/resources/gallery8.jpg"
-                              title=""
                               class="lightbox"
                               ><i class="fa fa-search"></i
                             ></a>
                           </li>
                         </ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3><a href="#" title="">Wifi Camera Security</a></h3>
+                      <h3><a href="#">WiFi Bullet Camera</a></h3>
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+                      <ul class="features-list">
+                        <li><i class="fa fa-wifi"></i> Wireless Setup</li>
+                        <li><i class="fa fa-sd-card"></i> SD Card Slot</li>
+                        <li><i class="fa fa-shield"></i> Motion Alerts</li>
+                        <li>
+                          <i class="fa fa-video-slash"></i> Video Compression
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12 cams alarm">
+
+                  <!-- 9. Advanced Motion Detector -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="gallery-col">
-                      <div class="gallery-img">
+                      <div class="gallery-img" style="position: relative">
                         <img
                           src="assets/images/resources/gallery9.jpg"
                           alt=""
                         />
                         <ul class="gallery-optz">
                           <li>
-                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                            <a href="#"><i class="fa fa-link"></i></a>
                           </li>
                           <li>
                             <a
                               href="assets/images/resources/gallery9.jpg"
-                              title=""
                               class="lightbox"
                               ><i class="fa fa-search"></i
                             ></a>
                           </li>
                         </ul>
                       </div>
-                      <!--gallery-img end-->
-                      <h3>
-                        <a href="#" title="">Biometric Ultraloq Thumbprint</a>
-                      </h3>
+                      <h3><a href="#">Advanced Motion Detector</a></h3>
+                      <p
+                        style="
+                          margin: 5px 0;
+                          font-size: 16px;
+                          font-weight: bold;
+                          text-align: left;
+                          color: #000;
+                        "
+                      >
+                        Features:
+                      </p>
+                      <ul class="features-list">
+                        <li>
+                          <i class="fa fa-walking"></i> Smart Motion Sensor
+                        </li>
+                        <li>
+                          <i class="fa fa-chart-line"></i> Real-Time Tracking
+                        </li>
+                        <li><i class="fa fa-lightbulb"></i> Light Trigger</li>
+                        <li><i class="fa fa-history"></i> Activity Logs</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <!--masonary end-->
-                <div class="clearfix"></div>
               </div>
             </div>
-            <!--gallery-sec end-->
+
             <div class="serity-pagination">
               <nav aria-label="Page navigation example">
                 <ul class="pagination">
@@ -491,9 +676,9 @@
               </nav>
             </div>
           </div>
-          <!--gallery-page end-->
         </div>
       </section>
+
       <!--page-content end-->
 
       <section class="partner-section">

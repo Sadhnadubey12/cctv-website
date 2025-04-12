@@ -27,15 +27,16 @@
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/color2.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/color.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
 
   <body>
     <div class="wrapper">
+      <!-- header start -->
       <header>
         <div class="top-header">
           <div class="container">
@@ -104,10 +105,53 @@
                 <ul>
                   <li>
                     <a class="active" href="index.html" title="">Home</a>
+                    <!-- <ul>
+                      <li>
+                        <a class="active" href="index-2.html" title=""
+                          >01 Homepage</a
+                        >
+                      </li>
+                      <li><a href="index2.html" title="">02 Homepage</a></li>
+                      <li><a href="index3.html" title="">03 Homepage</a></li>
+                    </ul> -->
                   </li>
                   <li><a href="about.html" title="">About</a></li>
                   <li><a href="services.html" title="">Our Services</a></li>
-
+                  <!-- <li>
+                    <a href="#" title="">Pages</a>
+                    <ul>
+                      <li>
+                        <a href="#" title="">Shop</a>
+                        <ul>
+                          <li><a href="shop.html" title="">Shop</a></li>
+                          <li>
+                            <a href="shop-details.html" title=""
+                              >Shop Details</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="gallery.html" title="">Gallery</a></li>
+                      <li><a href="reference.html" title="">Reference</a></li>
+                      <li>
+                        <a href="project-details.html" title=""
+                          >Project Details</a
+                        >
+                      </li>
+                      <li><a href="prices.html" title="">Prices</a></li>
+                      <li>
+                        <a href="#" title="">Team</a>
+                        <ul>
+                          <li><a href="team.html" title="">Team</a></li>
+                          <li>
+                            <a href="team-details.html" title=""
+                              >Team Details</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li> -->
                   <li>
                     <a href="services.html" title="">Security Solutions</a>
                     <ul>
@@ -118,10 +162,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href="gallery.html" title="">Our Client</a>
-                  </li>
-                  <li><a href="products.html" title="">Product </a></li>
+                  <li><a href="gallery.html" title="">Our Clients </a></li>
                 </ul>
               </nav>
               <!--navigation end-->
@@ -146,11 +187,13 @@
         </div>
         <!--bottom-header end-->
       </header>
+      <!--header end-->
 
+      <!--mobile-menu start new -->
       <div class="mobile-menu">
         <ul>
           <li>
-            <a class="active" href="index.html" title="">Home</a>
+            <a class="active" href="#" title="">Home</a>
             <!-- <ul>
               <li>
                 <a class="active" href="index-2.html" title="">01 Homepage</a>
@@ -170,13 +213,10 @@
             </ul>
           </li>
           <li><a href="gallery.html" title="">Our Clients</a></li>
-          <li><a href="products.html" title="">Product</a></li>
-
           <li><a href="contact.html" title="">Contact</a></li>
         </ul>
       </div>
-
-      <!--mobile-menu end-->
+      <!--mobile-menu end new-->
 
       <div class="search-popup">
         <form>
@@ -193,136 +233,55 @@
       </div>
       <!--search-popup end-->
 
-      <section
-        class="banner-section white-box style2"
-        style="height: 400px; overflow: hidden; position: relative"
-      >
-        <div class="banner-slider" style="height: 100%; position: relative">
-          <!-- Slide 1 -->
-          <div
-            class="banner-slide slick-slide"
-            style="
-              background-image: url(assets/images/resources/banner2.jpg);
-              height: 300px;
-              background-size: cover;
-              background-position: center;
-              position: relative;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-            "
-          >
-            <!-- Dark overlay -->
-            <div
-              style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                z-index: 1;
-              "
-            ></div>
-
-            <!-- Text content -->
-            <div style="position: relative; z-index: 2; color: white">
-              <h1 style="margin: 0px">
-                Innovating the Future with RealNet Technology
-              </h1>
-              <p style="margin: 10px 0">
-                Empowering businesses with cutting-edge IT solutions for a
-                smarter tomorrow.
-              </p>
-              <a href="contact.html" class="lnk-default">Start Now</a>
+      <section class="banner-section white-box">
+        <div class="banner-slider style1">
+          <div class="banner-slide slick-slide overlay-dark">
+            <div class="container">
+              <div class="banner-content">
+                <h1>Innovating the Future with RealNet Technology</h1>
+                <p>
+                  Empowering businesses with cutting-edge IT solutions for a
+                  smarter tomorrow.
+                </p>
+                <a href="contact.html" title="" class="lnk-default"
+                  >Start Now</a
+                >
+              </div>
+              <!--banner-content end-->
             </div>
           </div>
-
-          <!-- Slide 2 -->
+          <!--banner-slide end-->
           <div
-            class="banner-slide slick-slide"
-            style="
-              background-image: url(assets/images/resources/banner3.jpg);
-              height: 300px;
-              background-size: cover;
-              background-position: center;
-              position: relative;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-            "
+            class="banner-slide slick-slide overlay-dark"
+            style="background-image: url(assets/images/resources/banner2.jpg)"
           >
-            <!-- Dark overlay -->
-            <div
-              style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                z-index: 1;
-              "
-            ></div>
-
-            <!-- Text content -->
-            <div style="position: relative; z-index: 2; color: white">
-              <h1 style="margin: 0">
-                Real Net Technology – Powering Digital Transformation
-              </h1>
-              <p style="margin: 10px 0">
-                Next-gen IT solutions to accelerate business growth, security,
-                and efficiency.
-              </p>
-              <a href="contact.html" class="lnk-default">Start Now</a>
+            <div class="container">
+              <div class="banner-content">
+                <h1>Safty and Security at your Fingertips</h1>
+                <p>2000+ people have put their trust in CCTV, How about You?</p>
+                <a href="#" title="" class="lnk-default">Start Now</a>
+              </div>
+              <!--banner-content end-->
             </div>
           </div>
-
-          <!-- Slide 3 -->
+          <!--banner-slide end-->
           <div
-            class="banner-slide slick-slide"
-            style="
-              background-image: url(assets/images/resources/banner4.jpg);
-              height: 300px;
-              background-size: cover;
-              background-position: center;
-              position: relative;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-            "
+            class="banner-slide slick-slide overlay-dark"
+            style="background-image: url(assets/images/resources/banner3.jpg)"
           >
-            <!-- Dark overlay -->
-            <div
-              style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                z-index: 1;
-              "
-            ></div>
-
-            <!-- Text content -->
-            <div style="position: relative; z-index: 2; color: white">
-              <h1 style="margin: 0">
-                Real Net Technology – Your Partner in IT & Security
-              </h1>
-              <p style="margin: 10px 0">
-                Trusted by businesses for reliable, scalable, and cutting-edge
-                tech solutions.
-              </p>
-              <a href="contact.html" class="lnk-default">Start Now</a>
+            <div class="container">
+              <div class="banner-content">
+                <h1>We Secure Your Home Excet Your Thought</h1>
+                <p>2000+ people have put their trust in CCTV, How about You?</p>
+                <a href="#" title="" class="lnk-default">Start Now</a>
+              </div>
+              <!--banner-content end-->
             </div>
           </div>
+          <!--banner-slide end-->
         </div>
+        <!--banner-slider end-->
       </section>
-
       <!--banner-section end-->
 
       <section class="abt-block">
@@ -1993,79 +1952,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Social icons -->
-        <div class="icon-container">
-          <!-- <div class="icon whatsapp slow-blink-animation">
-            <a
-              href="https://api.whatsapp.com/send?phone=+919172908216&text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-              target="_blank"
-            >
-              <img src="./assets/images/whatsapp.png" alt="WhatsApp" />
-            </a>
-          </div> -->
-
-          <div class="icon whatsapp slow-blink-animation">
-            <a href="https://wa.me/918982931252" target="_blank">
-              <img src="./assets/images/whatsapp.png" alt="WhatsApp" />
-            </a>
-          </div>
-        </div>
-        <!-- css for icons start -->
-        <style>
-          .icon-container {
-            position: fixed;
-            z-index: 1000;
-            bottom: 50px;
-            right: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-          }
-
-          .icon-container .icon {
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            background-color: transparent;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-          }
-
-          .icon-container .icon:hover {
-            transform: scale(1.1);
-          }
-
-          .icon-container .icon img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-          }
-
-          @keyframes slowBlink {
-            0%,
-            85% {
-              opacity: 1;
-            }
-            90%,
-            95% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-
-          .slow-blink-animation {
-            animation: slowBlink 3s infinite;
-          }
-        </style>
-        <!-- css for icons end -->
-
-        <!-- Social icons -->
       </footer>
       <!--footer end-->
     </div>
